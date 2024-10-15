@@ -51,6 +51,7 @@ p {
     flex-wrap: wrap; /* التفاف العناصر عند الحاجة */
 }
 
+/* تنسيق البريد الإلكتروني */
 .contact-info a {
     color: #3498db; /* لون الروابط */
     text-decoration: none; /* إزالة الخط السفلي */
@@ -58,12 +59,17 @@ p {
     border-radius: 5px; /* زوايا منحنية */
     transition: background 0.3s ease; /* تأثير انتقال */
     margin: 0 5px; /* مسافة بين الروابط */
+    font-size: 0.9em; /* تصغير حجم الخط */
 }
 
-.contact-info a:hover {
-    background-color: #3498db; /* لون عند مرور الفأرة */
-    color: white; /* تغيير لون النص عند المرور */
+/* تنسيق معلومات الاتصال */
+.contact-info {
+    display: flex; /* استخدام flexbox */
+    justify-content: center; /* محاذاة في الوسط */
+    flex-wrap: wrap; /* التفاف العناصر عند الحاجة */
+    font-size: 1em; /* تصغير الحجم العام */
 }
+
 
 /* تنسيق الأقسام */
 .section {
