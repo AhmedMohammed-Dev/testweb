@@ -10,11 +10,11 @@ body {
 
 /* تنسيق الحاوية */
 .container {
-    max-width: 900px; /* عرض الحاوية */
+    max-width: 800px; /* عرض الحاوية */
     margin: 30px auto; /* محاذاة مركزية */
     padding: 20px; /* حشوة داخلية */
     background-color: #ffffff; /* لون خلفية الحاوية */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
     border-radius: 10px; /* زوايا منحنية */
 }
 
@@ -45,12 +45,19 @@ p {
 }
 
 /* تنسيق روابط الاتصال */
+.contact-info {
+    display: flex; /* استخدام flexbox */
+    justify-content: center; /* محاذاة في الوسط */
+    flex-wrap: wrap; /* التفاف العناصر عند الحاجة */
+}
+
 .contact-info a {
     color: #3498db; /* لون الروابط */
     text-decoration: none; /* إزالة الخط السفلي */
     padding: 5px 10px; /* حشوة داخلية */
     border-radius: 5px; /* زوايا منحنية */
     transition: background 0.3s ease; /* تأثير انتقال */
+    margin: 0 5px; /* مسافة بين الروابط */
 }
 
 .contact-info a:hover {
@@ -65,11 +72,6 @@ p {
     background-color: #f9f9f9; /* خلفية فاتحة لكل قسم */
     border-radius: 5px; /* زوايا منحنية */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-}
-
-.section-content {
-    padding: 20px; /* حشوة داخلية */
-    border-radius: 5px; /* زوايا منحنية */
 }
 
 /* تنسيق شريط المهارات */
@@ -96,40 +98,4 @@ p {
 }
 
 .progress {
-    background-color: #3498db; /* لون شريط التقدم */
-    height: 10px; /* ارتفاع الشريط */
-    border-radius: 5px; /* زوايا منحنية */
-    transition: width 0.5s ease; /* تأثير الانتقال */
-}
-
-/* استجابة للعناصر */
-@media (max-width: 600px) {
-    .container {
-        padding: 15px; /* تقليل الحشوة */
-    }
-
-    h1 {
-        font-size: 2em; /* تقليل حجم العنوان */
-    }
-
-    h2 {
-        font-size: 1.3em; /* تقليل حجم العناوين الفرعية */
-    }
-
-    p {
-        font-size: 1em; /* تقليل حجم النص */
-    }
-
-    .percentage {
-        top: -20px; /* رفع الرقم في الشريط */
-    }
-
-    .skill-bar {
-        flex-direction: column; /* تغيير الاتجاه في الشاشات الصغيرة */
-        align-items: flex-start; /* محاذاة العناصر إلى اليسار */
-    }
-
-    .bar {
-        width: 100%; /* الشريط يحتل عرض كامل */
-    }
-}
+    background-color: #3498db; /* لون شريط
