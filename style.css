@@ -1,107 +1,135 @@
 /* ضبط الخلفية والخط */
 body {
     background-color: #f0f4f8; /* لون خلفية هادئ */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* استخدام خط مريح */
     color: #333; /* لون النص */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6; /* ارتفاع السطر */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحشوة */
 }
 
 /* تنسيق الحاوية */
 .container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+    max-width: 900px; /* عرض الحاوية */
+    margin: 30px auto; /* محاذاة مركزية */
+    padding: 20px; /* حشوة داخلية */
     background-color: #ffffff; /* لون خلفية الحاوية */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
     border-radius: 10px; /* زوايا منحنية */
 }
 
 /* تنسيق الرأس */
 .header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #e0e0e0; /* خط فصل خفيف */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding-bottom: 20px; /* حشوة أسفل */
+    border-bottom: 2px solid #e0e0e0; /* خط فصل */
 }
 
 h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-size: 2.5em; /* حجم عنوان كبير */
+    margin: 0; /* إزالة الهوامش */
     color: #2c3e50; /* لون العنوان */
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #34495e;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    font-size: 1.5em; /* حجم عنوان فرعي */
+    color: #34495e; /* لون مختلف للعناوين الفرعية */
+    text-transform: uppercase; /* جعل العنوان بالأحرف الكبيرة */
+    margin-bottom: 10px; /* مسافة أسفل العنوان */
 }
 
+/* تنسيق النصوص */
 p {
-    font-size: 1.1em;
-    color: #555; /* لون النص الرئيسي */
+    font-size: 1.1em; /* حجم النص */
+    color: #555; /* لون نص باهت */
 }
 
+/* تنسيق روابط الاتصال */
 .contact-info a {
     color: #3498db; /* لون الروابط */
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    text-decoration: none; /* إزالة الخط السفلي */
+    padding: 5px 10px; /* حشوة داخلية */
+    border-radius: 5px; /* زوايا منحنية */
+    transition: background 0.3s ease; /* تأثير انتقال */
 }
 
 .contact-info a:hover {
     background-color: #3498db; /* لون عند مرور الفأرة */
-    color: white; /* لون النص عند المرور */
+    color: white; /* تغيير لون النص عند المرور */
 }
 
-/* ... الأجزاء السابقة من CSS ... */
-
-/* تنسيق القسم */
+/* تنسيق الأقسام */
 .section {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e0e0e0; /* خط خفيف بين الأقسام */
+    margin-bottom: 40px; /* المسافة بين الأقسام */
+    padding: 20px; /* حشوة داخلية */
+    background-color: #f9f9f9; /* خلفية فاتحة لكل قسم */
+    border-radius: 5px; /* زوايا منحنية */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
 }
 
 .section-content {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #f9f9f9; /* خلفية فاتحة مريحة للعين */
+    padding: 20px; /* حشوة داخلية */
+    border-radius: 5px; /* زوايا منحنية */
 }
-
-/* ... الأجزاء المتبقية من CSS ... */
-
 
 /* تنسيق شريط المهارات */
 .skill-bar {
-    display: flex; /* استخدم Flexbox لمحاذاة العناصر */
-    justify-content: space-between; /* توزيع الفضاء بالتساوي بين العناصر */
-    align-items: center; /* محاذاة العناصر في الوسط عموديًا */
-    margin: 15px 0;
+    display: flex; /* استخدام Flexbox لتنسيق الشريط */
+    justify-content: space-between; /* توزيع الفضاء بالتساوي */
+    align-items: center; /* محاذاة العناصر في الوسط */
+    margin: 15px 0; /* المسافة العمودية */
 }
 
 .bar {
     background-color: #e0e0e0; /* لون خلفية الشريط */
     border-radius: 5px; /* زوايا منحنية */
-    padding: 5px; /* حشوة */
-    width: 80%; /* عرض الشريط */
+    width: 100%; /* عرض الشريط كامل */
     position: relative; /* إبقاء النسبة المطلقة داخل هذا القسم */
 }
 
 .percentage {
     position: absolute; /* يجعل النسبة تظهر في موقع مطلق */
     right: 10px; /* المسافة من اليمين */
-    top: -25px; /* زيادة هذه القيمة لرفع الرقم */
+    top: -25px; /* رفع الرقم قليلاً */
     color: #333; /* لون النص */
     font-weight: bold; /* زيادة سمك الخط */
 }
-
 
 .progress {
     background-color: #3498db; /* لون شريط التقدم */
     height: 10px; /* ارتفاع الشريط */
     border-radius: 5px; /* زوايا منحنية */
     transition: width 0.5s ease; /* تأثير الانتقال */
+}
+
+/* استجابة للعناصر */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* تقليل الحشوة */
+    }
+
+    h1 {
+        font-size: 2em; /* تقليل حجم العنوان */
+    }
+
+    h2 {
+        font-size: 1.3em; /* تقليل حجم العناوين الفرعية */
+    }
+
+    p {
+        font-size: 1em; /* تقليل حجم النص */
+    }
+
+    .percentage {
+        top: -20px; /* رفع الرقم في الشريط */
+    }
+
+    .skill-bar {
+        flex-direction: column; /* تغيير الاتجاه في الشاشات الصغيرة */
+        align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    }
+
+    .bar {
+        width: 100%; /* الشريط يحتل عرض كامل */
+    }
 }
